@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		document.addEventListener("DOMContentLoaded", function (event) {
+			const slides = document.querySelectorAll('.slide');
+			let currentSlide = 0;
+
+			function showSlide(index) {
+				slides.forEach((slide, i) => {
+					if (i === index) {
+						slide.classList.add('active');
+					} else {
+						slide.classList.remove('active');
+					}
+				});
+			}
+
+			function nextSlide() {
+				currentSlide++;
+				if (currentSlide >= slides.length) {
+					currentSlide = 0;
+				}
+				showSlide(currentSlide);
+			}
+			setInterval(nextSlide, 2000);
+			showSlide(currentSlide);
+		});
+	</script>
+	<meta charset="utf-8">
+	<title>原神</title>
+	<link rel="stylesheet" href="../css/first.css" />
+</head>
+
+<body>
+	<div id="video"><video src="../img/backgroundvideo.mp4" preload="auto" muted="muted" loop="loop"
+			autoplay="autoplay"></video></div>
+	<div id="div_up">
+		<table>
+			<tr>
+				<td><img src="../img/mihoyo.png" width="108px" height="32px" id="mi_size" /></td>
+				<td width="500px"></td>
+				<td class="up_text3">首页</td>
+				<td class="up_text2"><a href="./world.html">世界</a></td>
+				<td class="up_text2"><a href="./character.html">角色</a></td>
+				<td class="up_text2"><a href="./community.html">社区</a></td>
+				<td width="500px"></td>
+				<td>
+					<a href="./login.html" target="blank">登录/注册</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<main>
+		<div class="slideshow-container">
+			<div class="slide">
+				<img src="../img/bg1.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg2.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg3.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg4.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg5.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg6.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg7.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg8.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg9.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg10.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg11.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg12.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg13.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg14.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg15.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg16.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg17.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg18.jpg">
+			</div>
+			<div class="slide">
+				<img src="../img/bg19.jpg">
+			</div>
+		</div>
+	</main>
+	<div class="money"><a href="../img/money.jpg" class="money-text"><font color="rgba(124,107,152,1)">点击助力</font></a></div>
+	<div><img src="../img/safe.png" alt=""></div>
+</body>
+
+</html>

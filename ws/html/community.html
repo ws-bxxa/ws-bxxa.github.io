@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/community.css" />
+</head>
+
+<body background="../img/community_bg.jpg">
+	<div id="div_up">
+		<table>
+			<tr id="nm">
+				<td><img src="../img/mihoyo.png" width="108px" height="32px" id="mi_size" /></td>
+				<td width="500px"></td>
+				<td class="up_text2"><a href="./first.html">首页</a></td>
+				<td class="up_text2"><a href="./world.html">世界</a></td>
+				<td class="up_text2"><a href="./character.html">角色</a></td>
+				<td class="up_text3">社区</td>
+				<td width="500px"></td>
+				<td>
+					<a href="./login.html" target="blank">登录/注册</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="ccc">
+		<table id="co">
+			<tr>
+				<td class="c_t"><img src="../img/c_ht.jpg" width="70px" />
+					<font style=" color: rgb(197, 28, 28);">胡桃（大老婆）</font>
+				</td>
+				<td class="c_t"></td>
+				<td class="c_t">尘白禁区！！！</td>
+				<td class="c_t"></td>
+				<td class="c_t"><a href="javascript:void(0);"><img src="../img/点赞.png" onclick="change(this)"
+							width="32px" /></a>
+				</td>
+			</tr>
+			<tr>
+				<td class="c_t"><img src="../img/c_wd.jpg" width="70px" />
+					<font style=" color: rgb(46, 160, 77);">温迪（酒蒙子）</font>
+				</td>
+				<td class="c_t"></td>
+				<td class="c_t">绝区零yyds</td>
+				<td class="c_t"></td>
+				<td class="c_t"><a href="javascript:void(0);"><img src="../img/点赞.png" onclick="change(this)" id="x1"
+							width="32px" /></a></td>
+			</tr>
+			<tr>
+				<td class="c_t"><img src="../img/c_wy.jpg" width="70px" />
+					<font style=" color: rgb(46, 160, 77);">万叶（八嘎）</font>
+				</td>
+				<td class="c_t"></td>
+				<td class="c_t">鸣潮天下第一</td>
+				<td class="c_t"></td>
+				<td class="c_t"><a href="javascript:void(0);"><img src="../img/点赞.png" onclick="change(this)" id="x2"
+							width="32px" /></a></td>
+			</tr>
+			<tr>
+				<td class="c_t"><img src="../img/c_qq.jpg" width="70px" />
+					<font style=" color: rgb(32, 131, 197);"> 七七（小呆呆）</font>
+				</td>
+				<td class="c_t"></td>
+				<td class="c_t">三国杀蒸蒸日上！</td>
+				<td class="c_t"></td>
+				<td class="c_t"><a href="javascript:void(0);"><img src="../img/点赞.png" onclick="change(this)" id="x2"
+							width="32px" /></a></td>
+			</tr>
+			<tr>
+				<td class="c_t"><img src="../img/c_kl.jpg" width="70px" />
+					<font style=" color: rgb(197, 28, 28);"> 可莉（好女儿）</font>
+				</td>
+				<td class="c_t"></td>
+				<td class="c_t">狂欢之椅和蹦蹦炸弹是绝配！</td>
+				<td class="c_t"></td>
+				<td class="c_t"><a href="javascript:void(0);"><img src="../img/点赞.png" onclick="change(this)" id="x2"
+							width="32px" /></a></td>
+			</tr>
+			<tr>
+				<td class="c_t"><img src="../img/c_yl.jpg" width="70px" />
+					<font style=" color: rgb(32, 131, 197);"> 优菈（小傲娇）</font>
+				</td>
+				<td class="c_t"></td>
+				<td class="c_t">合乎粥礼</td>
+				<td class="c_t"></td>
+				<td class="c_t"><a href="javascript:void(0);"><img src="../img/点赞.png" onclick="change(this)" id="x2"
+							width="32px" /></a></td>
+			</tr>
+
+
+		</table>
+
+	</div>
+	<div id="comment">
+		<input type="text" id="water" placeholder="来灌水啊!">
+		<input type="button" id="add" value="评论">
+	</div>
+
+	<script>
+		var x2 = document.getElementById("x1").src;
+		document.getElementById("add").onclick = function () {
+			var water = document.getElementById("water").value;
+			var name = "派蒙"
+			var picture =
+				'<img src="../img/c_pm.jpg" width="70px"><font style=" color: #ffffde;">我（秦始皇)</font>'
+
+			var table = document.getElementsByTagName("table")[1];
+
+			table.innerHTML += "<tr>\n" +
+				"<td class=\"c_t\">" + picture +
+				"<td class=\"c_t\">" + "</td>\n" +
+				"<td class=\"c_t\">" + water + "</td>\n" + "<td class=\"c_t\">" + "</td>" +
+				"<td class=\"c_t\"><a href=\"javascript:void(0);\" ><img src=\"../img/点赞.png\"  onclick=\"change(this)\" width=\"32px\"/></a></td>\n" +
+				"</tr>";
+		}
+
+		function change(obj) {
+
+			if (obj.src == x2) {
+				obj.src = '../img/点赞1.png'
+
+			} else {
+				obj.src = '../img/点赞.png'
+
+			}
+		}
+	</script>
+</body>
+
+</html>
